@@ -37,10 +37,44 @@
 
       .contact-inner {
         grid-template-columns: minmax(0, 1fr) !important;
+        align-items: start !important;
+        gap: clamp(28px, 4vw, 48px) !important;
+      }
+
+      .contact-copy {
+        grid-area: auto !important;
       }
 
       .contact-panel {
+        grid-area: auto !important;
         grid-column: 1 !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        justify-self: center !important;
+        width: min(100%, 760px);
+        gap: 0 !important;
+        margin-top: 0 !important;
+        border-radius: 22px !important;
+      }
+
+      .contact-panel a,
+      .contact-panel > div {
+        grid-template-columns: auto minmax(0, 1fr) auto !important;
+        justify-content: stretch !important;
+        min-height: 82px !important;
+        gap: 16px !important;
+        padding: 0 24px !important;
+        border-radius: 0 !important;
+      }
+
+      .contact-panel > div {
+        grid-template-columns: auto minmax(0, 1fr) !important;
+      }
+
+      .contact-panel span {
+        overflow: visible !important;
+        text-overflow: clip !important;
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
       }
 
       /* Keep the projects section intentionally simple and lightweight. */
@@ -143,7 +177,7 @@
         }
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-bTUFfxAE.js?v=2"></script>
+    <script type="module" crossorigin src="/assets/index-bTUFfxAE.js?v=3"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BTApIXs8.css">
   </head>
   <body>
