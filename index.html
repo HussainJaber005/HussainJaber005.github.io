@@ -77,6 +77,10 @@
         overflow-wrap: anywhere !important;
       }
 
+      [dir="rtl"] .contact-panel a[href^="tel:"] span {
+        text-align: right !important;
+      }
+
       /* Keep the projects section intentionally simple and lightweight. */
       .projects-list {
         grid-template-columns: minmax(0, 1fr);
@@ -165,6 +169,26 @@
 
       .tech-row {
         margin-top: 22px !important;
+      }
+
+      @media (min-width: 1181px) {
+        .contact-inner {
+          grid-template-columns: minmax(0, 1.15fr) minmax(420px, 0.85fr) !important;
+          gap: clamp(40px, 5vw, 72px) !important;
+        }
+
+        .contact-copy {
+          grid-column: 1 !important;
+          grid-row: 1 !important;
+        }
+
+        .contact-panel {
+          grid-column: 2 !important;
+          grid-row: 1 !important;
+          align-self: start !important;
+          width: 100% !important;
+          margin-top: 30px !important;
+        }
       }
 
       @media (max-width: 760px) {
