@@ -29,8 +29,121 @@
         --font-geist-mono: "Geist Mono";
         --font-arabic: "Noto Kufi Arabic";
       }
+
+      /* The contact diagram is intentionally hidden. */
+      .contact-system-card {
+        display: none !important;
+      }
+
+      .contact-inner {
+        grid-template-columns: minmax(0, 1fr) !important;
+      }
+
+      .contact-panel {
+        grid-column: 1 !important;
+      }
+
+      /* Keep the projects section intentionally simple and lightweight. */
+      .projects-list {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px !important;
+      }
+
+      .project-card {
+        min-height: 0 !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        background: var(--surface) !important;
+      }
+
+      .project-meta,
+      .case-grid,
+      .built-list,
+      .inspect-link {
+        display: none !important;
+      }
+
+      .project-visual {
+        display: none !important;
+      }
+
+      #project-1 .project-visual,
+      #project-2 .project-visual {
+        display: block !important;
+        min-height: 0 !important;
+        padding: clamp(18px, 4vw, 36px) !important;
+        border-inline-end: 0 !important;
+        border-bottom: 1px solid var(--line);
+      }
+
+      #project-1 .project-screen-stack,
+      #project-2 .project-screen-stack {
+        min-height: 0 !important;
+      }
+
+      #project-1 .project-ai-frame,
+      #project-2 .project-ai-frame {
+        width: min(100%, 760px);
+        margin-inline: auto;
+      }
+
+      #project-1 .project-signal-grid,
+      #project-2 .project-signal-grid {
+        display: none !important;
+      }
+
+      #project-1 .project-attachment-strip,
+      #project-2 .project-attachment-strip {
+        grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      #project-1 .project-attachment img,
+      #project-2 .project-attachment img {
+        height: 76px;
+      }
+
+      #project-1 .ai-scanline,
+      #project-2 .ai-scanline {
+        background: linear-gradient(to bottom, transparent, #fff, transparent);
+        box-shadow: 0 0 28px rgba(255, 255, 255, 0.9);
+      }
+
+      .project-copy {
+        padding: 32px !important;
+      }
+
+      .project-role {
+        margin: 0 0 10px !important;
+      }
+
+      .project-copy h3 {
+        font-size: clamp(25px, 3vw, 32px) !important;
+      }
+
+      .project-summary {
+        display: -webkit-box;
+        margin-top: 12px !important;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+      }
+
+      .tech-row {
+        margin-top: 22px !important;
+      }
+
+      @media (max-width: 760px) {
+        .projects-list {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .project-copy {
+          padding: 26px !important;
+        }
+      }
     </style>
-    <script type="module" crossorigin src="/assets/index-bTUFfxAE.js"></script>
+    <script type="module" crossorigin src="/assets/index-bTUFfxAE.js?v=2"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BTApIXs8.css">
   </head>
   <body>
